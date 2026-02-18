@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  /* font-family: 'Poppins';  */
+}
+
+.Contact-page h1 {
+  color: #fff;
+  font-family: "Cinzel", serif;
+  font-size: 7rem;   
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(139, 137, 137, 0.75);
+  position: absolute;
+  left: 24.9%;
+  top: 5%;
+}
+
+.contact{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: calc(100vh - 70px);
+   padding-top: 170px;
+} 
+
+form{
+  max-width: 600px;
+  width: 100%;
+  background: rgba(32, 30, 30, 0.75);
+  padding: 25px 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  color: #333;
+  margin: 25px;
+  font-family: 'Poppins';
+}
+
+form h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+form .input-box{
+   margin-top: 20px;
+} 
+
+.input-box .field{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 1.5px solid rgba(0, 0, 0, .1);
+  outline: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.input-box .field.mess{
+  height: 100px; 
+  resize: none;
+  font-family: 'Poppins' !important;
+}
+
+form button{
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+}
+form button:hover{
+   background-color: #252323;
+   color: #fff;
+}

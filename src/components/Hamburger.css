@@ -1,0 +1,100 @@
+/* Hamburger icon */
+.hamburger {
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* Transform hamburger into cross */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Full-screen menu overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: #222;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.5s ease;
+  z-index: 1000;
+}
+
+.menu-overlay.open {
+  height: 100vh;
+}
+
+.menu-overlay ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu-overlay ul li {
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-overlay ul li:hover {
+  color: #373737;
+}
+
+.nav-links {
+  list-style: none;       /* remove bullets */
+  padding: 0;
+  margin: 0;
+  display: block;         /* vertical layout */
+  justify-content: center;
+}
+
+.nav-links li {
+  margin-bottom: 100px;    /* space between items, increase as needed */
+}
+
+.nav-links li a {
+  /* font-family: 'Montserrat', sans-serif;  */
+  font-family: 'Playfair Display';
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 4.5rem;      /* increase font size */
+  transition: color 0.4s ease;
+}
+
+.nav-links li a:hover {
+  color: #3c3c3c;         /* hover effect */
+}
+

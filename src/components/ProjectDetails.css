@@ -1,0 +1,121 @@
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+}
+
+.slider-window {
+  width: 55vw;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 17px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.project-container {
+  width: 55vw;
+  height: 60vh;
+  background-color: rgba(62, 61, 61, 0.59);
+  border-radius: 17px;
+  flex-shrink: 0;
+}
+
+/* buttons */
+.slider-controls {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.slider-controls button {
+  padding: 0.6rem 1.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.slider-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* desigining card internally */
+.project-container .project-heading {
+  width: 55vw;
+  height: 100px;
+}
+
+.project-container .project-img {
+  width: 55vw;
+  height: 336px;
+  position: absolute;
+  margin-top: 50px;
+}
+.project-heading {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  padding-left: 20px;
+  padding-top: 7px;
+}
+.project-heading span {
+  margin-left: 510px;
+}
+
+.project-heading #ancher1 {
+  margin-left: 490px;
+}
+
+.project-heading .description {
+  font-size: 1rem;
+  font-family: "Poppins";
+  padding-top: 6px;
+  padding-left: 2.4px;
+  color: rgba(174, 172, 172, 0.75);
+}
+
+.project-img #sorting {
+  object-fit: cover;
+  height: 280px;
+  width: 450px;
+  position: relative;
+  left: 20%;
+  border-radius: 20px;
+}
+
+.project-heading .description-p2 {
+  font-size: 1rem;
+  font-family: "Poppins";
+  padding-top: 6px;
+  padding-left: 0px;
+  color: rgba(174, 172, 172, 0.75);
+}
+.project-heading #ancher2 {
+  margin-left: 600px;
+}
+
+.project-img #email {
+  object-fit: cover;
+  height: 260px;
+  width: 540px;
+  position: relative;
+  left: 20%;
+  top: 6%;
+  border-radius: 20px;
+}
+
+#p5 h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

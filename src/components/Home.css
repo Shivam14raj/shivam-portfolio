@@ -1,0 +1,157 @@
+.bg {
+  min-height: 100vh;
+  background-color: #272727;
+  background-image: radial-gradient(
+    rgba(255,255,255,0.18) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.profile-img {
+  position: absolute;
+  top: 4%;
+  left: 33%;
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+
+}
+
+
+.h1{
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+.h11{
+  color: #4e4d4d;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 4.5%;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+.logo{
+  color: white;
+  display: inline-block;
+  position: absolute;
+  left: 1%;
+  top: 1.1%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.location-card {
+  background-color: #565656; 
+  width: 230px;
+  height: 100px;
+  border-radius: 0 50px 50px 0; /* only right side rounded */
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  position: absolute;
+  top: 60%;
+  left: 0; /* left-aligned */
+  gap: 15px;
+  color: #fff;
+  font-family: 'Poppins';
+  
+   backdrop-filter: blur(10px); /* optional glassy blur effect */
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.4); /* subtle depth */
+}
+.location-card .place{
+  font-size: 20px;
+  position: absolute;
+  left: 2.5%;
+}
+.location-card .globe{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  left: 69%;
+}
+
+.location-card .globe img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;   /* ensures entire image fits inside the circle */
+  border-radius: 50%;    /* keeps it circular */
+  display: block;        /* remove inline spacing issues */
+  /* margin: 5px 6px;          center inside the .globe div */
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+  transform: rotate(0deg); /* slight tilt of globe image */
+  animation: rotateGlobe 5s linear infinite; /* rotate continuously */
+} 
+
+/* Keyframes for continuous rotation */
+@keyframes rotateGlobe {
+  0% {
+    transform: rotate(0deg); /* start */
+  }
+  100% {
+    transform: rotate(-360deg); /* full circle */
+  }
+}
+
+
+.arrow{
+  position: absolute;
+  right: 280px;
+  top: 50%;
+}
+
+
+.social-link {
+  font-family: 'Poppins';
+  color: #fff;
+  font-weight: 300;
+  width: 10vw;
+  font-size: 22px;
+
+  position: absolute;
+  right: 160px;
+  top: 64%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.social-link h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.social-link .amp {
+  margin: 0 6px; /* 👈 spacing between GitHub & CV */
+}
+
+.social-anchor:hover {
+  color: #bebbbb;
+}
+
+
+.social-anchor {
+  color: inherit;
+  text-decoration: none;
+}
+
+
