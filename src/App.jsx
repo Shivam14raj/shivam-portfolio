@@ -7,7 +7,7 @@ import Home from './components/Home.jsx';
 import NavBar from './components/NavBar.jsx';
 import About from './components/About.jsx';
 import Projects from './components/Projects.jsx';
-import Contact from './components/Contact.jsx';
+import Contact from './components/Contact.jsx'; 
 
 function App() {
   return (

@@ -83,3 +83,98 @@
   object-fit: contain;
   margin-right: 30px;
 }
+
+
+
+/* ===========================
+   TABLET (max-width: 1024px)
+   =========================== */
+@media (max-width: 1024px) {
+
+  .about-me {
+    font-size: 5.5rem;
+    left: 18%;
+    top: 6%;
+  }
+
+  .about-me-text {
+    width: 75vw;
+    left: 12.5%;
+    font-size: 1.5rem;
+    top: 28%;
+  }
+
+  .tech-icons {
+    width: 80vw;
+    top: 22%;
+  }
+
+  .tech-icons img {
+    margin-left: 0 !important;
+  }
+}
+
+
+/* ===========================
+   MOBILE (max-width: 768px)
+   =========================== */
+@media (max-width: 768px) {
+
+  .about-me {
+    position: relative;
+    font-size: 3.2rem;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .about-me-text {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin: 24px auto;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .tech-icons {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    top: 0;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tech-icons img {
+    margin: 0 !important;
+  }
+}
+
+
+/* ===========================
+   SMALL MOBILE (max-width: 480px)
+   =========================== */
+@media (max-width: 480px) {
+
+  .about-me {
+    font-size: 2.4rem;
+    letter-spacing: 0.5px;
+  }
+
+  .about-me-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .tech-icons img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
